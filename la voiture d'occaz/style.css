@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+header, footer {
+    flex-basis: 100%;
+}
+main {
+    flex: 1
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, footer {
+    background-color: #B11557;
+    height: 100px;
+    display: flex;
+}
+
+header {
+    justify-content: space-between;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header a, footer a {
+    color: #fff;
+}
+
+header a:hover, footer a:hover {
+    color: #000;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+header li {
+    padding-left: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+footer {
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .menu {
+    margin-left: 20px;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+}
+
+.social img {
+    width: 36px;
+    height: auto;
+    padding: 5px;
+}
+
+.geolocalisation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+
+.geolocalisation img {
+    padding: 5px;
+    height: 95px;
+}
+
+address {
+    color: #fff;
+    font-style: normal;
+}
+
+aside {
+    width: 250px;
+    background-color: #C4C4C4;
+    padding: 20px;
+}
+
+aside h1 {
+    font-size: 1.3rem;
+    color: #000;
+}
+
+aside a {
+    color: #000;
+}
+
+main {
+    margin: 20px;
+}
+
+/**** page nouveautés ****/
+
+.cards {
+    display: flex;
+}
+
+.card {
+    width: 30%;
+    margin: 25px;
+    border: 1px solid rgb(191, 191, 191);
+    box-shadow: 5px 5px 5px rgb(131, 130, 130);
+}
+
+.card a {
+    color: #000;
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card p {
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+/***** page triumph ****/
+
+/* .slider {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.slide {
+    width: 500px;
+    flex-shrink: 0;
+    height: 100%;
+} */
+
+#triumph .img {
+    display: flex;
+}
+
+#triumph main img {
+    border-radius: 20px;
+    width: 33%;
+    border: 10px;
+}
+
+#triumph .img img:nth-child(even) {
+    margin: 0 20px;
+}
+
+#triumph dl {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+}
+
+#triumph dl div {
+    margin: 10px;
+    width: 20%;
+}
+
+#triumph dt {
+    font-variant: small-caps;
+    color: #333;
+}
+#triumph dd {
+    margin-left: 0;
+}

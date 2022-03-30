@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+header img {
+    height: 124px;
+}
+
+header div:last-child {
+    text-align: center;
+    background-color: #e9b200;
+    flex-grow: 1;
+}
+
+aside {
+    width: 25%;
+}
+
+nav a {
+    display: block;
+}
+
+main {
+    width: 75%;
+}
+
+/* page accueil */
+
+#promo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#promo img {
+    max-width: 15%;
+    margin: 5px;
+}
+
+/* pages produits */
+
+#produits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 25%;
+    min-width: 175px
+}
+
+#produits img {
+    display: block;
+    width: 175px;
+}

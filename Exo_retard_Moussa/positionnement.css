@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#flex.container {
+    margin: 0 auto;
+    display: flex;
+    width: 950px;
+    flex-flow: row wrap;
+}
+
+#flex header, #flex nav, #flex footer {
+    width: 950px;
+}
+
+#flex header {
+    height: 100px;
+    background-color: #c0cf10;
+    margin: 5px 1px;
+}
+
+#flex nav {
+    height: 50px;
+    background-color: #62b134;
+}
+
+#flex aside {
+    height: 305px;
+    width: 310px;
+    margin: 5px 1px;
+}
+
+#flex aside.vert {
+    background-color: #019642;
+    margin-bottom: 5px;
+}
+
+#flex aside.bleu {
+    background-color: #019aac;
+}
+
+#flex article {
+    background-color: #009679;
+    width: 326px;
+    height: 150px;
+    margin-top: 5px;
+}
+
+#flex footer {
+    height: 75px;
+    background-color: #2299d1;
+}
+
+#grid.container {
+    display: grid;
+    grid-template-columns: 310px 1fr 310px;
+    grid-template-rows: 100px 50px 150px 155px 75px;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "aside1 article1 aside2"
+        "aside1 article2 aside2"
+        "footer footer footer";
+    margin: 0 auto;
+    width: 950px;
+    column-gap: 1px;
+    row-gap: 5px;
+
+}
+
+#grid header {
+    grid-area: header;
+    background-color: #c0cf10;
+}
+
+#grid nav {
+    grid-area: nav;
+    background-color: #62b134;
+}
+
+#grid aside.vert {
+    background-color: #019642;
+    grid-area: aside1;
+}
+
+#grid aside.bleu {
+    background-color: #019aac;
+    grid-area: aside2;
+}
+
+#grid article.haut {
+    grid-area: article1;
+}
+
+#grid article.bas {
+    grid-area: article2;
+}
+
+#grid article {
+    background-color: #009679;  
+    /*height: 150px;*/
+}
+
+/*#grid article:first-child {
+    margin-bottom: 5px;
+}*/
+
+#grid footer {
+    background-color: #2299d1;
+    grid-area: footer;
+}
