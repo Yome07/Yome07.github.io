@@ -102,12 +102,7 @@ body {
 
 #grid article {
     background-color: #009679;  
-    /*height: 150px;*/
 }
-
-/*#grid article:first-child {
-    margin-bottom: 5px;
-}*/
 
 #grid footer {
     background-color: #2299d1;
