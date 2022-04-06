@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+section {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+article {
+    border-bottom: 1px solid #000;
+}
+
+p {
+    overflow: auto;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.right + p {
+    text-align: right;
+}

@@ -1,0 +1,42 @@
+table {
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 3px ridge rgb(168, 168, 168);
+}
+
+thead tr:first-child th:nth-child(2) {
+    font-size: 2em;
+    color: blue;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #fcb941;
+}
+
+tbody tr:nth-child(2n+1) {
+    background-color: #f1654c;
+}
+
+tbody tr:nth-child(2n) td:first-child {
+    background-color: #7e3661;
+    color: #fff;
+}
+
+tbody tr:nth-child(2n+1) td:first-child {
+    background-color: #888;
+    color: #fff;
+}
+
+tbody tr:nth-child(2n+1) td:last-child {
+    color: #fff;
+    background-color: #8870ff;
+}

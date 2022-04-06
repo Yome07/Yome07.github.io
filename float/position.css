@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    border: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+}
+
+header {
+    height: 100px;
+    line-height: 100px;
+    background-color: #ff0051;
+}
+
+aside {
+    width: 25%;
+    height: 80vh;
+    line-height: 80vh;
+    background-color: #625afd;
+}
+
+
+.droite {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+section {
+    width: 50%;
+    position: absolute;
+    top: 100px;
+    left: 25%;
+    height: 80vh;
+}
+
+article {
+    height: 85%;
+    padding-top: 65%;
+    width: 20%;
+    border: 1px solid #fff;
+    background-color: #00ec80;
+    float: left;
+}
+
+footer {
+    height: 15%;
+    padding-top: 50%;
+    background-color: #ffe320;
+    clear: left;
+}
