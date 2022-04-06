@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function AfficheAge() {
+            var date_day = new Date();
+            jour_day = date_day.getDate();
+            mois_day = date_day.getMonth()+1;
+            annee_day = date_day.getFullYear();
+
+            //calcul de l'âge
+            var ans;
+            ((mois_day > 5)||((mois_day == 5)&&(jour_day >= 24))) ? ans =  annee_day - 1976 : ans =  (annee_day - 1976) -1;
+            document.getElementById('age').innerHTML += ans+' ans ';
+        }
+
+        </script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Qui suis-je ?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Compétences</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Expériences</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Formations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Réalisations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <section>
+              <h1>Qui suis-je ?</h1>
+              <div>
+                  <img src="" alt="">
+                  <p>Guillaume Andreux</p>
+                  <p id="age"><script type="text/javascript">AfficheAge();</script></p>
+              </div>
+          </section>
+    </div>
+</body>
+</html>
