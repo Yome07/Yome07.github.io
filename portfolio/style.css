@@ -1,0 +1,53 @@
+/******** couleur ********/
+
+body, .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+} 
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(141, 141, 141);
+} 
+
+.card {
+    color: #000;
+}
+
+nav, section:nth-child(2n+1), .bgBlue > p {
+    background-color: #0D1E4C;
+}
+
+nav {
+    border-bottom: 2px solid #EE4437;
+    box-shadow: #fff;
+}
+
+section:nth-child(2n), .bgOrange li, .bgOrange > p, .btn-primary {
+    background-color: #EE4437;
+}
+
+.btn-primary {
+    border-color: #EE4437;
+}
+
+.btn-primary:hover {
+    opacity: .75;
+    background-color: #EE4437;
+    border-color: #EE4437;
+}
+
+.bgWhite > div, .bgWhite.bgOrange li {
+    background-color: #fff;
+    color: #000;
+}
+
+/*** positions ***/
+
+.roundedSkill li {
+    list-style-type: none;
+}
+
+.roundedDate > p, .roundedDate > div, .roundedSkill li {
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+}
