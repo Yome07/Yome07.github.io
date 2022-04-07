@@ -41,6 +41,10 @@ section:nth-child(2n), .bgOrange li, .bgOrange > p, .btn-primary {
 
 /*** positions ***/
 
+section:first-of-type {
+    margin-top: 4.4rem;
+}
+
 .roundedSkill li {
     list-style-type: none;
 }
@@ -49,4 +53,14 @@ section:nth-child(2n), .bgOrange li, .bgOrange > p, .btn-primary {
     border-radius: 25px;
     padding: 10px;
     margin: 10px;
+}
+
+/*** tailles ***/
+
+.card {
+    width: 11rem;
+}
+
+.card h2 {
+    font-size: 1.25rem;
 }
