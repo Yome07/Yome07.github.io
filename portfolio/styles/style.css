@@ -1,6 +1,6 @@
 /******** couleur ********/
 
-body, .navbar-light .navbar-nav .nav-link {
+body {
     color: #fff;
 } 
 
@@ -28,7 +28,7 @@ section:nth-child(2n), .bgOrange li, .bgOrange > p, .btn-primary {
     border-color: #EE4437;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:focus {
     opacity: .75;
     background-color: #EE4437;
     border-color: #EE4437;
@@ -62,7 +62,7 @@ section:first-of-type {
 
 @media screen and (min-width: 992px) {
     .roundedDate > div {
-        flex:  1 1;
+        flex: 1 1;
     }
 }
 
@@ -75,3 +75,24 @@ section:first-of-type {
 .card h2 {
     font-size: 1.25rem;
 }
+
+.roundedDate img {
+    max-width: 10rem;
+    max-height: 5rem;
+    
+}
+
+@media screen and (min-width: 992px) {
+    .roundedDate img {
+        max-width: 12rem;
+        max-height: 6rem;
+    }
+}
+
+#contact .container div {
+    max-width: 50rem;
+    margin: auto;
+}
+
+
+
